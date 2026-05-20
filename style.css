@@ -671,17 +671,49 @@ a{
 .contactBox{
     height: 40vh;
     width: 80vw;
+
     background: linear-gradient(
-        60deg,
-        #2FA4D7,
+        135deg,
+        #EFE4D2,
         #34738f,
-        #F5E9D8,
-        gray,
+        #254D70,
+        #131D4F,
         #7b6052,
-        #E76F2E
+        #954C2E
     );
+
+    background-size: 400% 400%;
+
+    animation: gradientFlow 15s ease infinite;
+
     border-radius: 20px;
+
     text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* SMOOTH GRADIENT FLOW */
+
+@keyframes gradientFlow{
+
+    0%{
+        background-position: 0% 50%;
+    }
+
+    40%{
+        background-position: 100% 50%;
+    }
+
+    80%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+
 }
 
 .outlog{
@@ -694,6 +726,85 @@ a{
     align-items: center;
 }
 
+.txt{
+    margin: 50px;
+}
+
+.socialMedia ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socialMedia ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.ig{
+    background:linear-gradient(
+        60deg,
+        #833AB4,
+        #C13584,
+        #E1306C,
+        #FD1D1D,
+        #F56040,
+        #FCAF45
+    );
+}
+.ig:hover{
+    background:linear-gradient(
+        60deg,
+        #833AB4,
+        #C13584,
+        #E1306C,
+        #FD1D1D,
+        #F56040,
+        #FCAF45
+    );
+}
+
+.x{
+    background:linear-gradient(
+        60deg,
+        black,
+        rgb(48, 47, 47),
+        rgb(67, 63, 63),
+        black
+    );
+}
+.x:hover{
+        background:linear-gradient(
+        60deg,
+        black,
+        rgb(48, 47, 47),
+        rgb(67, 63, 63),
+        black
+    );
+}
+
+.ld{
+    background: linear-gradient(
+        60deg,
+        #04325f,
+        #074788,
+        #0A66C2,
+        #0676e5
+    );
+}
+.ld:hover{
+    background: linear-gradient(
+        60deg,
+        #04325f,
+        #074788,
+        #0A66C2,
+        #0676e5
+    );
+}
+
+.social{
+    box-shadow: 0px 0px 12px 0px;
+}
 /* =========================
         RESPONSIVE DESIGN
 ========================= */
